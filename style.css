@@ -1,0 +1,64 @@
+body {
+  font-family: "Playpen Sans Arabic", cursive;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1b191a;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+h2, .input-group, #result {
+  position: relative;
+  z-index: 1;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+input {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: "Playpen Sans Arabic", cursive;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
